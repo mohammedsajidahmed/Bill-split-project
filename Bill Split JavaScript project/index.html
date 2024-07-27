@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bill Split project</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <body>
+    <h1>Bill Split</h1>
+  <div class="outer-container">
+    <div class="bill-container">
+      <p style="font-size: 20px; margin: 13px 0;">Bill</p>
+      <div class="input-bill-container">
+      <span class="rupee-sign" style='font-family:Arial;'>&#8377;
+      </span>
+      <input type="number" class="bill-input js-bill-input">
+      </div>
+
+      <div class="tip-selector">
+        <p>Select Tip</p>
+        <button id="but1" class="tip-button btn" disabled>5%</button>
+        <button 
+        id="but2" class="tip-button btn" disabled>10%</button>
+        <button id="but3" 
+        class="tip-button btn">15%</button>
+        <button id="but4"  class="tip-button btn" disabled>25%</button>
+        <button id="but5" class="tip-button btn" disabled>50%</button>
+        <button id="but6" class="tip-button btn" disabled>75%</button>
+      </div>
+      <input type="number" placeholder="Custom Tip" class="custom-tip-input js-custom-tip-input" disabled>
+      <p>Number of people</p>
+      <input type="number" placeholder="No Of People" class="number-of-people-input js-number-of-people-input" disabled>
+      <div class="generate-bill-button-container">
+        <button class="generate-bill-button js-generate-bill-btn" disabled>Generate Bill</button>
+      </div>
+    </div>
+
+
+    <div class="bill-generator-outer-container">
+      <div class="bill-generator-container">
+        <div class="first">
+          <p class="tip-amount">Tip amount</p>
+          <p class="total">Total</p>
+          <p class="split">Each Person Bill</p>
+        </div>
+
+        <div class="second">
+          <p class="js-tip-amount"> </p>
+          <p class="js-total-amount"> </p>
+          <p class="js-split-amount"> </p>
+        </div>
+      </div>
+      <button class="js-reset-btn reset-button" disabled>Reset</button>
+    </div>
+  </div>
+
+  </body>
+</html>
